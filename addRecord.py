@@ -1,7 +1,6 @@
 from connect import *
 
 def addFilm():
-    
 
     try:
         film = []

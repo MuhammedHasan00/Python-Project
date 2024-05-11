@@ -3,7 +3,7 @@ from connect import *
 def deleteRecord():
 
     try:
-        idField = int(input("Enter teh ID of the record you wish to delete: "))
+        idField = int(input("Enter the ID of the record you wish to delete: "))
         
         cursor.execute("SELECT * FROM tblfilms WHERE filmID = ?",(idField,))
         if cursor.fetchone() is None:
